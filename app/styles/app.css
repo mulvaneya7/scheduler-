@@ -74,9 +74,9 @@ p {
   /* max-width: 1024px; */
   max-width: max-content;
   min-height: 100vh;
-  background: #f9f9f9;
+
+  /* background: #f9f9f9; */
   margin: 0 auto;
-  border: 1px solid #111;
 }
 
 /**
@@ -204,6 +204,7 @@ p {
 
 .jumbo {
   padding: 30px;
+  text-align: center;
 }
 
 .background-mow {
@@ -218,7 +219,6 @@ p {
 .jumbo h2 {
   font-size: 3.2em;
   margin-top: -25px;
-  text-align: center;
 }
 
 .jumbo p,
@@ -232,6 +232,11 @@ p {
   position: relative;
   top: -25px;
   right: -20px;
+}
+
+.header-list li {
+  display: inline-flex;
+  padding-right: 10px;
 }
 
 /**
@@ -491,7 +496,8 @@ p {
 
 .box-1 {
   /* border: 1px solid #2F5339; */
-  background-color: #f3f3f3;
+  background-color: #fff;
+  border: 1px solid #f6f6f6;
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
@@ -545,15 +551,16 @@ p {
   justify-content: center;
   width: 100%;
   height: fit-content;
-  margin: 0 auto;
+  margin-top: 20px;
 
   /* border: 2px solid #2F5339; */
 }
 
 .review-box {
   align-items: center;
-  margin-top: 25px;
-  width: 175px;
+  padding: 10px;
+  width: 300px;
+  background-color: #fff;
 }
 
 .review-box p {
@@ -565,21 +572,33 @@ p {
   font-size: 20px;
   font-weight: bold;
   padding: 2px;
+  margin-bottom: 0;
 }
 
-.review-box img {
-  width: 50px;
+.review-box .reviewer {
+  justify-content: left;
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+.review-box .title-img-review {
+  object-fit: contain;
+  width: 100%;
+}
+
+.review-box .review-star {
+  width: 100px;
   height: 50px;
-  border-radius: 50%;
-  margin-top: 10px;
+  object-fit: contain;
 }
 
 .reviews {
   display: inline-flex;
-  justify-content: left;
+  justify-content: center;
   width: 100%;
-  margin: 0 auto;
-  border: 2px solid #016aba;
+  margin-top: 25px;
+
+  /* border: 2px solid #016aba; */
   align-items: center;
 }
 
@@ -593,4 +612,40 @@ p {
   background-color: #90c833;
   height: 20px;
   margin: 10px;
+}
+
+.scheduler-main {
+  justify-content: center;
+  align-items: center;
+  border: #016aba solid 1px;
+  height: 100%;
+}
+
+.service-form {
+  border: #176e00 solid 1px;
+  width: 50%;
+  padding-top: 10px;
+}
+
+.service-form p {
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+.service-form .service-form-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border: #301816 solid 1px;
+}
+
+.service-form input {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #2f5339;
+  width: 250px;
 }

@@ -1,0 +1,5 @@
+//date-time selector component
+<div class="date-time-selector">
+  <label>{{label}}</label>
+  <input type="datetime-local" value={{selectedDateTime}} {{on "change" (action "dateTimeSelected")}}>
+</div>
